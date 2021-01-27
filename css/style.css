@@ -1,11 +1,12 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    
 }
 nav{
     position: sticky;
-    top: 0;
+    top: -30px;
+    background: linear-gradien(white,#40e075);
 }
 hr:nth-child(1){
     position: sticky;
@@ -17,6 +18,7 @@ nav ul{
     text-align: right;
     padding-top: 50px;
     margin-right: 100px;
+    
  
 }
 nav ul li{
@@ -48,6 +50,7 @@ nav ul li a::after{
 
 nav ul li a:hover::after{
     width: 100%;
+
 }
 .picture{
     height: 400px;
@@ -79,6 +82,7 @@ nav ul li a:hover::after{
     border-radius: 85px;
     margin-top: 30px;
     
+    
 }
 .pic h1,.pic h2{
     color: rgb(255, 255, 255);
@@ -98,7 +102,7 @@ nav ul li a:hover::after{
 .text h2{
     font-size: 70px;
     margin: 20px;
-
+    color: #40e075;
 }
 h3{
     margin: 20px;
@@ -107,6 +111,24 @@ h3{
 .text h4{
     margin-top: 40px;
     margin: 20px;
+}
+.button{
+    background: #40e075;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.experience,
+.education,
+.change{
+    margin-top: 200px;
 }
 .experience h1,
 .education h1{
@@ -188,12 +210,9 @@ h3{
     margin-top: 100px;
 }
 
-.SL{
-    width: 80%;
-    margin: auto;
-}
+
 .change{
-    width: 100%;
+    width: 83%;
     height: 400px;
     background: rgba(95, 94, 91, 0.603);
     margin: auto;
@@ -266,11 +285,15 @@ h3{
 }
 .contact h2{
     margin-top: 60px;
+    padding-top: 20px;
     color: aliceblue;
 }
-.nav{
+.group{
+    margin-top: 30px;
     display: flex;
+    justify-content: space-around;
 }
+
 .form #name{
     height: 30px;
     width: 193px;
@@ -295,15 +318,36 @@ h3{
     width: 395px;
     background: orange;
     border: none;
-    height: 30px;
+    height: 40px;
     border-radius: 10px;
+    margin-top: 15px;
 }
-.map{
-    width: 400px;
+iframe, form{
+    width: 600px;
     height: 300px;
-    background-color: aliceblue;
 }
 footer{
     height: 120px;
+    margin-top: 0;
     background: rgb(41, 41, 41);
+    display: flex;
+    justify-content: space-around;
 }
+footer h4{
+    margin: 0;
+    margin-left: 30px;
+    color: white;
+}
+.icon{
+    display: flex;
+}
+.icon li{
+    list-style: none;
+    padding: 10px;
+    color: white;
+}
+.icon li a{
+    color: white;
+
+}
+
