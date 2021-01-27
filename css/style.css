@@ -118,12 +118,20 @@ h3{
     height: 50px;
     border: none;
     border-radius: 20px;
-    color: white;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 70px;
     margin-top: 30px;
+}
+.button li{
+    list-style: none;
+    font-size: 20px;
+}
+.button li a{
+    text-decoration: none;
+    color: white;
 }
 .experience,
 .education,
@@ -140,7 +148,7 @@ h3{
     display: flex;
     width: 80%;
     height: 200px;
-    background: rgba(85, 71, 71, 0.589);
+    background: #66533ba6;
     margin: auto;
     margin-top: 50px;
 
@@ -215,7 +223,7 @@ h3{
 .change{
     width: 83%;
     height: 400px;
-    background: rgba(95, 94, 91, 0.603);
+    background: #66533ba6;
     margin: auto;
     justify-content: space-around;
     margin-top: 50px;
@@ -278,7 +286,7 @@ h3{
 
 footer{
     height: 225vh;
-    background-color: rgba(11, 11, 12, 0.432);
+    background-color: #66533ba6;
     margin-top: 80px;
     
 }
@@ -293,7 +301,7 @@ footer h1{
 .contact{
     width: 350px;
     height: 170px;
-    background-color: rgba(97, 93, 93, 0.377);
+    background-color: #645e56a6;
     border-bottom: 5px solid  #40e075;
     overflow: hidden;
     text-align: center;
