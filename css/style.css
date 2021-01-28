@@ -1,12 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-    
+    font-family: Franklin Gothic Demi;
 }
 nav{
     position: sticky;
     top: -30px;
-    background: linear-gradien(white,#40e075);
+    margin-top: -16px;
+    background: #40e075;
 }
 hr:nth-child(1){
     position: sticky;
@@ -53,11 +54,17 @@ nav ul li a:hover::after{
 
 }
 .picture{
-    height: 400px;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    background-image: url(https://www.careers.ox.ac.uk/sites/default/files/careers/images/media/cvs-640x400.jpg);
-    margin-top: 0;
+    background-position: top;
+    background-image:url(https://img5.goodfon.com/wallpaper/nbig/a/3a/sanya-sonin-photographer-model-girl-brunette-dark-eyes-mouth.jpg);
+    width: 100%;
+    height: 80vh;
+    font-family: Arial, Helvetica;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 
 }
 .home{
@@ -87,6 +94,7 @@ nav ul li a:hover::after{
 .pic h1,.pic h2{
     color: rgb(255, 255, 255);
     text-align: center;
+    
 }
 .pic h2{
     color: #40e075;
@@ -99,11 +107,78 @@ nav ul li a:hover::after{
     background: #c1dfc49a;
     margin-top: 70px;
 }
-.text h2{
-    font-size: 70px;
-    margin: 20px;
-    color: #40e075;
-}
+
+
+.container {
+    position: relative;
+    margin-left: 20px;
+    background-color: var(--complimentary-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   position: relative;
+  }
+  
+  .text h2 {
+    font-size: 50px;
+    color: var(--primary-color);
+    transform: translateY(-600px);
+    animation: 1.2s slideIn ease-in-out forwards 1s;
+    z-index: 10;
+    opacity: 0;
+    position: relative;
+  }
+  
+  .text h2::before {
+      content: '';
+      width: 0%;
+      color: #40e075;
+      background-color: var(--secondary-color);
+      position: absolute;
+      bottom: -10px;
+      animation: 1s underline ease-in-out forwards 2s;
+      mix-blend-mode: screen;
+  }
+  
+  .overlay {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      opacity: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--secondary-color);
+      transform: scale(.5);
+      animation: .5s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
+      color: #40e075;
+
+  }
+  
+  @keyframes skewBg {
+    0% {
+      transform: scale(.5);
+      color: #40e075;
+    }
+    100% {
+      transform: scale(1);
+      color: #40e075;
+    }
+  }
+  
+  @keyframes underline {
+    100% {
+      width: 100%;
+      color: #40e075;
+    }
+  }
+  
+  @keyframes slideIn {
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+      color: #16bb4d;
+    }
+  }
+
 h3{
     margin: 20px;
 
@@ -118,12 +193,11 @@ h3{
     height: 50px;
     border: none;
     border-radius: 20px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 70px;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 .button li{
     list-style: none;
@@ -133,15 +207,34 @@ h3{
     text-decoration: none;
     color: white;
 }
-.experience,
-.education,
+
 .change{
     margin-top: 200px;
 }
-.experience h1,
-.education h1{
+#ex,
+#edu{
     text-align: center;
     margin-top: 100px;
+}
+.experience{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image:url(https://images.unsplash.com/photo-1541681799731-44dfb98b5a80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+    width: 100%;
+    
+}
+
+.education{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image:url(https://images.unsplash.com/photo-1541681799731-44dfb98b5a80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+    width: 100%;
+    height: 550px;
+    padding-top: 20px;
 }
 
 .edu-1, .edu-2{
@@ -185,7 +278,6 @@ h3{
     height: 700px;
     width: 2px;
     background:#40e075;
-    opacity: 0.7;
     
 }
 
@@ -205,26 +297,58 @@ h3{
 .p-1{
     width: 100%;
     margin-right: 100px;
+    background: #524a42a6;
+    color: white;
+    margin-left: -20px;
+    border-radius: 10px;
+
+
+
 }
 .p-1:nth-child(2),
 .p-1:nth-child(3){
     margin-top: 100px;
+    margin-left: -20px;
+    background: #524a42a6;
+    border-radius: 10px;
+
+
+
 }
 .p-2{
     margin-left: 100px;
-    width: 300px;
+    width: 400px;
+    height: 150px;
+    background: #524a42a6;
+    color: white;
+    border-radius: 10px;
+
 }
-.p-2 h4:nth-child(2),
+.p-2 h4:nth-child(2){
+    margin-top: 115px;
+    background: #524a42a6;
+    height: 150px;
+    border-radius: 10px;
+
+}
+
 .p-2 h4:nth-child(3){
-    margin-top: 100px;
+    margin-top: 60px;
+    width: 400px;
+    background: #524a42a6;
+    height: 150px;
+    border-radius: 10px;
+
 }
 
-
+#skill{
+    text-align: center;
+    margin-top: 80px;
+}
 .change{
-    width: 83%;
+    width: 80%;
     height: 400px;
     background: #66533ba6;
-    margin: auto;
     justify-content: space-around;
     margin-top: 50px;
     padding-left: 220px;
@@ -328,6 +452,9 @@ iframe{
     height: 50px;
     border-radius: 25px;
     border: none;
+    background: rgba(241, 238, 238, 0.904);
+    outline: none;
+    
 }
 #text,#submit{
     width: 95%;
@@ -335,6 +462,9 @@ iframe{
     border-radius: 20px;
     border: none;
     margin-top: 20px;
+    background: rgba(240, 236, 236, 0.911);
+    outline: none;
+
 }
 #message{
     width: 95%;
@@ -342,11 +472,14 @@ iframe{
     border: none;
     font-size: 15px;
     margin-top: 20px;
+    background: rgba(226, 225, 225, 0.801);
+    outline: none;
 }
 #submit{
     font-size: 20px;
     color: white;
     background-color:  #40e075;
+    outline: none;
 }
 #submit:hover{
     background-color:  #23a54e;
@@ -367,4 +500,5 @@ iframe{
     font-size: 30px;
     color: black;
 }
+
 
