@@ -3,37 +3,64 @@ body{
     padding: 0;
     font-family: Courier New;
 }
+nav, scroll-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  nav, scroll-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  nav {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  scroll-container {
+    display: block;
+    width: 100%;
+    height: 2000px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 5em;
+  }
 nav{
     position: sticky;
-    top: -30px;
-    margin-top: -16px;
+    top: 0;
+    background: rgb(255, 254, 254);
 }
 hr:nth-child(1){
     position: sticky;
-    top: 100px;
+    top: 20px;
 }
 nav ul{
-    
     flex: 1;
     text-align: right;
-    margin-right: 100px;
-    padding-top: 50px;
-    margin-bottom: 0;
+    margin-right: 50px;
+    
  
 }
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.534);
-    background: #40e075;
 
 }
 nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(253, 252, 252);
+    color: rgb(0, 0, 0);
     padding: 0 10px;
     position: relative;
     font-family:Castellar;
@@ -67,14 +94,13 @@ nav ul li a:hover::after{
     background-position: top;
     background-image:url(https://img5.goodfon.com/wallpaper/nbig/a/3a/sanya-sonin-photographer-model-girl-brunette-dark-eyes-mouth.jpg);
     width: 100%;
-    height: 100vh;
-    font-family: Arial, Helvetica;
+    height: 80vh;
     letter-spacing: 0.02em;
-    font-weight: 400;
     -webkit-font-smoothing: antialiased;
-    margin-top: -150px;
+    margin-top: -0px;
 
 }
+
 .home{
     display: flex;
     justify-content: center;
@@ -85,7 +111,7 @@ nav ul li a:hover::after{
     width: 400px;
     height: 470px;
     background-color: #66533ba6;
-    margin-right: 50px;
+    margin-right: 20px;
     margin-top: 70px;
 }
 .photo{
@@ -116,6 +142,25 @@ nav ul li a:hover::after{
     margin-top: 70px;
 }
 
+/* .chat{
+    position: sticky;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    float: right;
+    margin-top: -260px;
+    
+    
+}
+.chat i{
+    font-size: 50px;
+} */
 
 .container {
     position: relative;
@@ -197,13 +242,12 @@ h3{
 .button{
     background: #40e075;
     width: 200px;
-    height: 50px;
+    padding: 10px;
     border: none;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 70px;
     margin-top: 5px;
 }
 .button li{
@@ -218,10 +262,12 @@ h3{
 .change{
     margin-top: 200px;
 }
-#ex,
-#edu{
+.mar{
+    height: 100px;
+}
+#h1{
     text-align: center;
-    margin-top: 100px;
+    
 }
 .experience{
     background-repeat: no-repeat;
@@ -239,7 +285,6 @@ h3{
     background-size: cover;
     background-position: top;
     background-image:url(https://images.unsplash.com/photo-1541681799731-44dfb98b5a80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
-    width: 100%;
     height: 550px;
     padding-top: 20px;
 }
@@ -247,22 +292,25 @@ h3{
 .edu-1, .edu-2{
     display: flex;
     width: 80%;
-    height: 200px;
     background:#524a42a6;
     margin: auto;
     margin-top: 50px;
     color: white;
+    border-radius: 10px;
 
 }
 ​
 .e-1{
     margin-left: 40px;
     width: 30%;
+    padding: 10px;
+    overflow: hidden;
 }
 .e-2{
     width: 60%;
-    margin-left: 40px;
+    padding: 10px;
 }
+
 
 .pic ul{
     margin-top: -20px;
@@ -301,89 +349,99 @@ h3{
     margin-top: 20px;
 }
 .box2, .box3{
-    margin-top: 200px;
+    margin-top: 250px;
 }
 .p-1{
-    width: 100%;
-    margin-right: 100px;
-    background: #524a42a6;
+    margin-right: 60px;
     color: white;
-    margin-left: -20px;
     border-radius: 10px;
-
-
-
+}
+.p-1:nth-child(1),
+.p-1:nth-child(2),
+.p-1:nth-child(3){
+    background: #524a42a6;
+    border-radius: 10px;
+    padding: 30px;
+}
+.p-1:nth-child(1){
+    margin-top: 20px;
 }
 .p-1:nth-child(2),
 .p-1:nth-child(3){
-    margin-top: 100px;
-    margin-left: -20px;
-    background: #524a42a6;
-    border-radius: 10px;
-
-
-
+    margin-top: 50px;
 }
 .p-2{
-    margin-left: 100px;
-    width: 400px;
-    height: 150px;
-    background: #524a42a6;
+    margin-left: 60px;
+    width: 400px;  
     color: white;
-    border-radius: 10px;
-
-}
-.p-2 h4:nth-child(2){
-    margin-top: 115px;
-    background: #524a42a6;
-    height: 150px;
-    border-radius: 10px;
-
 }
 
+.p-2 h4:nth-child(1),
+.p-2 h4:nth-child(2),
 .p-2 h4:nth-child(3){
-    margin-top: 60px;
-    width: 400px;
     background: #524a42a6;
-    height: 150px;
+    padding: 30px;
     border-radius: 10px;
+}
+.p-2 h4:nth-child(2),
+.p-2 h4:nth-child(3){
+    margin-top: 40px;
 
 }
 
 #skill{
     text-align: center;
     margin-top: 80px;
+    
 }
+
 .change{
-    width: 80%;
-    height: 400px;
-    background: #66533ba6;
     justify-content: space-around;
     margin-top: 50px;
-    padding-left: 220px;
     padding-top: 50px;
+    color: white;
+    text-align-last: left;
+    width: 100%;
+    margin: auto;
+}
+.skill, .language{
+    
+}
+.SL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #66533ba6; 
+    box-sizing: border-box;
+    padding: 10px;
 }
 .sub{
     display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    
+    background: #000;
 }
 .css,
 .py,
 .php{
     height: 6px;
     margin-top: 7px;
-    background: rgb(8, 121, 59);
+    background: #40e075;
+    box-sizing: border-box;
+
 }
 .css{
-    width: 500px;
+    width: 90%;
     margin-left: 20px;
 }
 .py{
-    margin-left: 65px;
-    width: 500px;
+    /* margin-left: 60px; */
+    width: 90%;
 }
 .php{
-    margin-left: 83px;
-    width: 550px;
+    /* margin-left: 83px; */
+    width: 80%;
 }
 .sub h5{
     margin-left: 10px;
@@ -398,18 +456,19 @@ h3{
 .th{
     margin-top: 5px;
     height: 6px;
-    background: rgb(8, 121, 59);
+    background: #40e075;
+    box-sizing: border-box;
 }
 .kh{
-    width: 550px;
+    width: 50%;
     margin-left: 68px;
 }
 .eng{
-    width: 500px;
-    margin-left: 62px;
+    width: 50%;
+    margin-left: 55px;
 }
 .th{
-    width: 440px;
+    width: 50%;
     margin-left: 83px;
 }
 .lang h5{
@@ -418,7 +477,6 @@ h3{
 }
 
 footer{
-    height: 225vh;
     background-color: #66533ba6;
     margin-top: 80px;
     
@@ -440,36 +498,53 @@ footer h1{
     text-align: center;
     color: white;
 }
-iframe{
-    width: 91%;
-    height: 350px;
-    margin-top: 80px;
+.contact a{
+    color: white;
+}
+.i{
+    display: flex;
+    justify-content: center;
+}
+.all{
+    display: flex;
     margin-left: 60px;
+}
+iframe{
+    width: 520px;
+    height: 290px;
+    margin-top: 80px;
     
 }
+
 .form{
-    margin-top: 80px;
-    margin-left: 60px;
-    
-}.form h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.form h2{
     color: white;
     text-align: center;
-    margin-left: -30px;
+}
+#name{
+    width: 38%;
 }
 #name,
 #email{
-    width: 46.8%;
-    height: 50px;
+    padding: 10px;
     border-radius: 25px;
     border: none;
     background: rgba(241, 238, 238, 0.904);
     outline: none;
     
 }
+#email{
+    width: 80%;
+    margin-top: 10px;
+}
 #text,#submit{
-    width: 95%;
-    height: 50px;
-    border-radius: 20px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 25px;
     border: none;
     margin-top: 20px;
     background: rgba(240, 236, 236, 0.911);
@@ -477,16 +552,18 @@ iframe{
 
 }
 #message{
-    width: 95%;
+    width: 80%;
+    height: 100px;
     border-radius: 20px;
     border: none;
     font-size: 15px;
-    margin-top: 20px;
+    padding: 10px;
+    margin-top: 10px;
     background: rgba(226, 225, 225, 0.801);
     outline: none;
 }
 #submit{
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     background-color:  #40e075;
     outline: none;
@@ -506,13 +583,38 @@ iframe{
     list-style: none;
     
 }
+footer hr{
+    margin-top: 50px;
+}
 .icon li a{
     font-size: 30px;
     color: black;
 }
 
-@media (max-width: 768px){
+@media (max-width: 668px){
+    .home{
+        flex-direction: column;
+    }
+    .SL{
+        flex-direction: column;
+    }
+    .sub,.lang{
+        flex-wrap: wrap;
 
-    
+    }
+
+    .css,.py, .php  {
+        order: 3;
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+    .info,.all{
+        flex-direction: column;
+    }
 }
+
+
+
 
