@@ -184,18 +184,19 @@ h3{
 }
 .button{
     background: #40e075;
-    width: 50%;
+    width: 55%;
     padding: 10px;
     border: none;
     border-radius: 20px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 5px;
     margin-left: 5px;
 }
 .button li{
     list-style: none;
     font-size: 20px;
-    z-index: -1;
 }
 .button li a{
     text-decoration: none;
@@ -650,6 +651,7 @@ footer hr{
         display: block;
         margin-top: 10px;
         line-height: 30px;
+        margin-left: -17%;
     }
     nav ul li a{
         font-size: 20px;
