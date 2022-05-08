@@ -12,6 +12,8 @@ nav{
     padding: 10px;
     background: rgb(255, 254, 254);
     z-index: 1;
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.42); */
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.384);
 }
 hr:nth-child(1){
     position: sticky;
@@ -71,7 +73,8 @@ nav ul li a:hover::after{
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
-    background-image:url(https://img5.goodfon.com/wallpaper/nbig/a/3a/sanya-sonin-photographer-model-girl-brunette-dark-eyes-mouth.jpg);
+    background-image:url('https://image.shutterstock.com/image-photo/developer-development-web-code-tech-260nw-526821523.jpg');
+    background-size: cover;
     width: 100%;
     height: 80vh;
     letter-spacing: 0.02em;
@@ -84,22 +87,24 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -350px;
+    margin-top: -400px;
 }
 .pic{
     width: 400px;
-    height: 470px;
+    height: 520px;
     background-color: #66533ba6;
     margin-right: 20px;
     margin-top: 70px;
+    padding: 10px;
+    border-radius: 5px;
 }
 .photo{
     width: 200px;
     height: 200px;
-    background-image: url(https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1107114230%2F0x0.jpg%3Ffit%3Dscale);
+    background-image: url('../image/Somphors.jpg');
     margin: auto;
     background-size: cover;
-    border-radius: 85px;
+    border-radius: 50%;
     margin-top: 30px;
     
     
@@ -112,13 +117,21 @@ nav ul li a:hover::after{
 .pic h2{
     color: #40e075;
 }
-
+.pic hr{
+    margin-top: 80px;
+}
+.pic ul li{
+    margin-top: 10px;
+}
 .text{
     width: 330px;
-    height: 470px;
+    height: 520px;
     color: black;
     background: #c1dfc49a;
     margin-top: 70px;
+    padding: 10px;
+    border-radius: 5px;
+
 }
 
 .container {
@@ -222,7 +235,7 @@ h3{
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
-    background-image:url(https://images.unsplash.com/photo-1541681799731-44dfb98b5a80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+    background-image:url('https://d33wubrfki0l68.cloudfront.net/8609f0a7e4cc61ac2db8e3f68505e5c7e340d831/c01eb/static/e8ab1b39b5730831c9463cb6ed18ca1b/developer-experience-header.png');
     
 }
 
@@ -232,7 +245,7 @@ h3{
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
-    background-image:url(https://images.unsplash.com/photo-1541681799731-44dfb98b5a80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+    background-image:url('https://d33wubrfki0l68.cloudfront.net/8609f0a7e4cc61ac2db8e3f68505e5c7e340d831/c01eb/static/e8ab1b39b5730831c9463cb6ed18ca1b/developer-experience-header.png');
     padding: 20px;
 }
 .ex{
@@ -241,10 +254,8 @@ h3{
     margin-top: 50px;
 }
 .b{
-    height: 700px;
     width: 2px;
     background:#40e075;
-    
 }
 
 .box{
@@ -255,57 +266,68 @@ h3{
     border-radius: 10px;
 }
 .box1{
-    margin-top: 20px;
+    margin-top: 80px;
 }
-.box2, .box3{
-    margin-top: 250px;
+.box2, .box4{
+    margin-top: 180px;
+}
+.box3{
+    margin-top: 230px;
 }
 .year{
-    width: 40%;
+    width: 55%;
     margin: auto;
-    margin-left: 20%;
     margin-top: 0%;
+    margin-right: 3%;
 }
 .p-1{
-    margin-right: 60px;
     color: white;
     border-radius: 10px;
-}
-.p-1:nth-child(1),
-.p-1:nth-child(2),
-.p-1:nth-child(3){
-    width: 45%;
+    width: 55%;
+    min-width: auto;
     background: #524a42a6;
     border-radius: 10px;
-    padding: 30px;
+    padding: 5px 30px 5px 30px;
+    float: right;
 }
 .paragraph{
-    width: 60%;
-    margin-left: 10%;
+    width: 55%;
+    margin-left: 3%;
 }
 .p-1:nth-child(1){
     margin-top: 20px;
 }
-.p-1:nth-child(2),
-.p-1:nth-child(3){
+/* .p-1:nth-child(2),
+.p-1:nth-child(3),
+.p-1:nth-child(4){
     margin-top: 50px;
-}
+} */
 .p-2{
     width: 60%;  
     color: white;
 }
 
-.p-2 h4:nth-child(1),
-.p-2 h4:nth-child(2),
-.p-2 h4:nth-child(3){
+.p-2 ul:nth-child(1),
+.p-2 ul:nth-child(2),
+.p-2 ul:nth-child(3),
+.p-2 ul:nth-child(4){
     background: #524a42a6;
-    padding: 30px;
+    padding: 15px 30px 15px 30px;
     border-radius: 10px;
 }
-.p-2 h4:nth-child(2),
-.p-2 h4:nth-child(3){
-    margin-top: 120px;
-
+.p-1:nth-child(2){
+    margin-top: 60px;
+}
+.p-1:nth-child(3){
+    margin-top: 105px;
+}
+.p-1:nth-child(4) {
+    margin-top: 35px;
+}
+.p-2 ul:nth-child(2),
+.p-2 ul:nth-child(3),
+.p-2 ul:nth-child(4){
+    margin-top: 50px;
 }
 
 .edu-1, .edu-2{
@@ -318,7 +340,7 @@ h3{
     border-radius: 10px;
 
 }
-​
+
 .e-1{
     margin-left: 40px;
     width: 30%;
@@ -351,23 +373,25 @@ h3{
     
 }
 
-.change{
-    justify-content: space-around;
-    margin-top: 50px;
-    padding-top: 50px;
-    color: white;
-    text-align-last: left;
-    width: 80%;
-    margin: auto;
+.skills{
+    display: flex;
+    justify-content: center;
 }
 
 .SL{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: #66533ba6; 
     box-sizing: border-box;
     padding: 10px;
+}
+.hard-skill{
+    width: 30%;
+    margin-right: 1%;
+}
+.soft-skill{
+    width: 25%;
+}
+.language{
+    width: 30%;
 }
 .sub{
     display: flex;
@@ -458,74 +482,17 @@ footer h1{
     display: flex;
     justify-content: center;
 }
-.all{
+.address{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 iframe{
-    width: 47%;
+    width: 90%;
     height: 290px;
     margin-top: 80px;
     border-radius: 15px;
     
-}
-
-.form{
-    width: 47%;
-    text-align: center;
-    margin-top: 20px;
-}
-.form h2{
-    color: white;
-    text-align: center;
-}
-#name{
-    width: 38%;
-}
-#name,
-#email{
-    padding: 10px;
-    border-radius: 25px;
-    border: none;
-    background: rgba(241, 238, 238, 0.904);
-    outline: none;
-    
-}
-#email{
-    width: 80%;
-    margin-top: 10px;
-}
-#text,#submit{
-    width: 80%;
-    padding: 10px;
-    border-radius: 25px;
-    border: none;
-    margin-top: 20px;
-    background: rgba(240, 236, 236, 0.911);
-    outline: none;
-
-}
-#message{
-    width: 80%;
-    height: 100px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-    padding: 10px;
-    margin-top: 10px;
-    background: rgba(226, 225, 225, 0.801);
-    outline: none;
-}
-#submit{
-    font-size: 15px;
-    color: white;
-    background-color:  #40e075;
-    outline: none;
-}
-#submit:hover{
-    background-color:  #23a54e;
- 
 }
 .icon{
     display: flex;
@@ -592,18 +559,18 @@ footer hr{
         width: 100%;        
 
     }
-    .p-2 h4:nth-child(1){
+    .p-2 ul:nth-child(1){
         margin-top: 5%;
     }
-    .p-2 h4:nth-child(1),
-    .p-2 h4:nth-child(2),
-    .p-2 h4:nth-child(3){
+    .p-2 ul:nth-child(1),
+    .p-2 ul:nth-child(2),
+    .p-2 ul:nth-child(3){
         margin-left: -20%;
         margin-right: -20%;
         width: 100%;        
     }
-    .p-2 h4:nth-child(2),
-    .p-2 h4:nth-child(3){
+    .p-2 ul:nth-child(2),
+    .p-2 ul:nth-child(3){
         margin-top: 26%;
     }
     .e-2{
